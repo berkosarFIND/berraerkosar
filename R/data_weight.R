@@ -1,4 +1,4 @@
-#' Weights and Heights #'
+#' Weights and Heights
 #' A dataset containing the height and weight data
 #' @format A data frame with 87 rows and 3 columns: #' \describe{
 #' \item{name}{name, a name}

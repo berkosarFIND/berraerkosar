@@ -35,10 +35,6 @@ remotes::install_local(path = 'berraerkosar_0.0.0.9000.tar.gz')
 
 This example shows how to calculate a body mass index using the bmi function.
 
-```{r example}
-library(berraerkosar)
-## basic example code
-```
 
 This following examples show how to use the BMI function.
 
