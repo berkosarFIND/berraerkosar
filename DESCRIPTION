@@ -1,15 +1,26 @@
 Package: berraerkosar
-Version: 0.0.0.9000
 Title: Dev-Functions
-Description: This is an R package that contains two functions. The first one calculates a body mass index. And the second one takes as parameter a single file with the format ‘xlsx’ and returns an object of format list containing the different tables of each tab of the file.
-Authors@R: c(person(given = "Berra",
-         family = "Erkosar",
-         role = c("aut", "cre"),
-         email = "berra.erkosar@finddx.org",
-         comment = c(ORCID = "0000-0002-1565-9316")),
-  person(given = "FIND",
-         role = "cph"))
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Berra", "Erkosar", , "berra.erkosar@finddx.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1565-9316")),
+    person("FIND", role = "cph")
+  )
+Description: This is an R package that contains two functions. The first
+    one calculates a body mass index. And the second one takes as
+    parameter a single file with the format ‘xlsx’ and returns an object
+    of format list containing the different tables of each tab of the
+    file.
 License: MIT + file LICENSE
+Imports: 
+    purrr,
+    readxl
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2

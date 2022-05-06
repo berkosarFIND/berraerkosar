@@ -1,3 +1,5 @@
 
 ^dev$
 ^LICENSE\.md$
+^berraerkosar\.Rproj$
+^\.Rproj\.user$
