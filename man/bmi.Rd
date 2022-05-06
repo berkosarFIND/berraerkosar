@@ -3,12 +3,6 @@
 \name{bmi}
 \alias{bmi}
 \title{BMI}
-\format{
-A data frame with masses and heights
-}
-\source{
-embedded data
-}
 \usage{
 bmi(mass, height)
 }
