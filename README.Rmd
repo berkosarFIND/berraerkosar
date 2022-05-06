@@ -1,0 +1,57 @@
+---
+output: github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# berraerkosar
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/berkosarFIND/berraerkosar/workflows/R-CMD-check/badge.svg)](https://github.com/berkosarFIND/berraerkosar/actions)
+<!-- badges: end -->
+
+The goal of berraerkosar is to calculate the body mass index and to list the datasets that are present in different sheets of an excel file.
+
+## Installation
+
+You can install the development version of berraerkosar like so:
+
+``` r
+remotes::install_local(path = 'berraerkosar_0.0.0.9000.tar.gz')
+```
+
+## Example
+
+This example shows how to calculate a body mass index using the bmi function.
+
+```{r example}
+library(berraerkosar)
+## basic example code
+```
+
+This following examples show how to use the BMI function.
+
+```{r bmi}
+library(dplyr)
+library(berraerkosar)
+
+#Calculating a single BMI
+bmi(mass = 80, height = 1.80) # Should give 24.7
+
+#To insert BMI column on a data frame
+data("data_weight")
+data_weight %>%
+  mutate(bmi = bmi(mass = mass, height = height))
+
+```
